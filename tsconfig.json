@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "ES2019",
+        "module": "ESNext",
+        "strict": true,
+        "importHelpers": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "lib": ["esnext"],
+        "baseUrl": ".",
+        "paths": {
+            "@functions": ["src/functions"],
+            "@triggers": ["src/triggers"],
+            "@params": ["src/params"]
+        }
+    },
+    "include": ["**/*.ts", "/types/**/*.ts"],
+    "exclude": ["node_modules"]
+}
